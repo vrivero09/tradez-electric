@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tradez-electric/static/css/main.5f361e03.chunk.css",
+    "main.js": "/tradez-electric/static/js/main.ac7014c0.chunk.js",
+    "main.js.map": "/tradez-electric/static/js/main.ac7014c0.chunk.js.map",
+    "runtime-main.js": "/tradez-electric/static/js/runtime-main.d8542ee5.js",
+    "runtime-main.js.map": "/tradez-electric/static/js/runtime-main.d8542ee5.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/tradez-electric/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.c9839e69.chunk.js": "/tradez-electric/static/js/2.c9839e69.chunk.js",
+    "static/js/2.c9839e69.chunk.js.map": "/tradez-electric/static/js/2.c9839e69.chunk.js.map",
+    "index.html": "/tradez-electric/index.html",
+    "precache-manifest.1b604861840c7ef754fad6d4569942b9.js": "/tradez-electric/precache-manifest.1b604861840c7ef754fad6d4569942b9.js",
+    "service-worker.js": "/tradez-electric/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/tradez-electric/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.5f361e03.chunk.css.map": "/tradez-electric/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.c9839e69.chunk.js.LICENSE.txt": "/tradez-electric/static/js/2.c9839e69.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8542ee5.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.c9839e69.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.ac7014c0.chunk.js"
+  ]
+}
