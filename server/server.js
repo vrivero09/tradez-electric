@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+require("dotenv").config();
 
 const app = express();
 
@@ -14,9 +15,6 @@ app.get('/', (req, res) => {
   res.send("home");
 });
 
-app.use('/', express.static(path.join(__dirname, '/client/build')));
-
-
 app.post('/api/world', (req, res) => {
   console.log(req.body);
   res.send(
@@ -24,5 +22,14 @@ app.post('/api/world', (req, res) => {
   );
 });
 
+//app.use middleware
+//express static in charge of sending static files req to client
+app.use('/', express.static(path.join(__dirname, "client", "build")));
+
+//right before app.listen, add this:
+//"*" means 'catch all' route handler.
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
