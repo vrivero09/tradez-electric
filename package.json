@@ -4,7 +4,7 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
@@ -22,6 +22,7 @@
   "dependencies": {
     "ejs": "^3.1.3",
     "express": "^4.17.1",
+    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
