@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.static(publicPath));
 
-app.set("view engine", "ejs");
+//app.set("view engine", "ejs");
 
 app.get("*", (req,res)=>{
   res.sendFile(path.join(publicPath, 'index.html'));
