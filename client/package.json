@@ -23,7 +23,7 @@
     "eject": "react-scripts eject"
   },
 
-  "proxy":"http;//localhost:8000",
+  "proxy":"https://localhost:8000",
   "author": "VRS",
   "license": "ISC",
   "browserslist": {
