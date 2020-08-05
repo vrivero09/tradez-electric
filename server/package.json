@@ -6,7 +6,8 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "cd ../ && cd client && npm start && cd -",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
