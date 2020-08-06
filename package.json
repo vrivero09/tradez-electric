@@ -2,7 +2,7 @@
   "name": "tradez-electric",
   "version": "1.0.0",
   "description": "test",
-  "main": "app.js",
+  "main": "client/app.js",
   "scripts": {
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
