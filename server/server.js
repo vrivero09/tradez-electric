@@ -10,8 +10,6 @@ app.set('port',port);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(favicon(__dirname + '/build/favicon.ico'));
-
 app.get('/home', function (req, res) {
  return res.send("I am home", console.log("ppphhooonnnneeeee hoomme"));
 });
