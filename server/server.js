@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/home', function (req, res) {
- return res.send("I am home", console.log("ppphhooonnnneeeee hoomme"));
+ return res.send("I am home");
 });
 
 if (process.env.NODE_ENV === 'production') {
