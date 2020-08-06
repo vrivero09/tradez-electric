@@ -7,25 +7,24 @@ const app = express();
 const port = process.env.PORT || 5000;
 app.set('port',port);
 
-const publicPath = path.join(__dirname, "build");
-
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(favicon(__dirname + '/build/favicon.ico'));
 
-// Serve static files from the React frontend app
-app.use('/', express.static(path.join(__dirname, 'dist')))
-// // Anything that doesn't match the above, send back index.html
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname + '/client/build/index.html'))
-// })
-
 app.get('/home', function (req, res) {
- return res.send(console.log("Helllooo????"));
+ return res.send("I am home", console.log("ppphhooonnnneeeee hoomme"));
 });
 
+if (process.env.NODE_ENV === 'production') {
+  // Express will serve up production assets
+  app.use(express.static('client/build'));
+
+  // Express serve up index.html file if it doesn't recognize route
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
