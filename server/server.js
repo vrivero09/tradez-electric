@@ -23,7 +23,7 @@ app.use('/', express.static(path.join(__dirname, 'dist')))
 // })
 
 app.get('/home', function (req, res) {
- return res.send('I am home');
+ return res.send(console.log("Helllooo????"));
 });
 
 
