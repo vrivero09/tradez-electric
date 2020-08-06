@@ -4,11 +4,10 @@
   "description": "test",
   "main": "app.js",
   "scripts": {
-    "build": "cd client && npm run build",
-    "install": "cd client && npm install",
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
     "client": "npm start --prefix client",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
