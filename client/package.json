@@ -11,6 +11,7 @@
     "npm": "^6.14.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
     "reactstrap": "^8.5.1",
     "webpack": "^4.42.0"
@@ -23,8 +24,7 @@
     "eject": "react-scripts eject",
     "postinstall": "react-scripts build"
   },
-
-  "proxy":"http://localhost:5000/",
+  "proxy": "http://localhost:5000/",
   "author": "VRS",
   "license": "ISC",
   "browserslist": {
