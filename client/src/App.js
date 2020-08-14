@@ -1,41 +1,28 @@
-import React, { Component} from 'react';
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Jumbotron, Container  } from 'reactstrap';
-// import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
+import './components/Nav';
+// import Navigation from './components/Nav';
+import {BrowserRouter, Route} from 'react-router-dom';
+import Home from './components/home';
+import About from './components/about';
+import Services from './components/services';
+import Contact from './components/contact';
 
-class App extends Component {
+class App extends Component{
+
   render(){
-    return (
-      <div className="App">
-        <Navbar className = "navbar navbar-dark bg-dark"color="dark" light expand="md">
-          <NavbarBrand href="/Home" className="mr-auto">Tradez Electric</NavbarBrand>
-            <Nav className="navbar-toggle collapsed" navbar>
-              <NavItem>
-                <NavLink href="/Home">Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/Services">Services</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/Contact">Contact</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/About">About</NavLink>
-              </NavItem>
-            </Nav>
-        </Navbar>
-
-        <Jumbotron fluid>
-        <Container fluid>
-          <h1 className="display-3">Marine Electric</h1>
-          <p className="lead">"COMING SOON!"</p>
-        </Container>
-      </Jumbotron>
-
-      </div>
-    );
+    return(
+      <BrowserRouter>
+        <div className="App">
+          <Route path='/' component={Home} />
+          <Route exact path='/Services' component={Services} />
+          <Route exact path='/About' component={About} />
+          <Route exact path='/Contact' component={Contact} />
+        </div>
+      </BrowserRouter>
+    )
   }
+
 }
 
 export default App;
