@@ -2,6 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const favicon = require('express-favicon');
+const { default: Contact } = require('../client/src/components/contact');
+const { default: Services } = require('../client/src/components/services');
+const { default: Home } = require('../client/src/components/home');
+const { default: About } = require('../client/src/components/about');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -10,21 +14,21 @@ app.set('port',port);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.get('/Home', function (req, res) {
-//  return res.send("I am home");
-// });
+app.get('/Home', function (req, res) {
+ return res.send(Home);
+});
 
-// app.get('/Services', function (req, res) {
-//   return res.send("I am in services");
-//  });
+app.get('/Services', function (req, res) {
+  return res.send(Services);
+ });
 
-//  app.get('/Contact', function (req, res) {
-//   return res.send("I am in Contact");
-//  });
+ app.get('/Contact', function (req, res) {
+  return res.send(Contact);
+ });
 
-//  app.get('/About', function (req, res) {
-//   return res.send("I am in about");
-//  });
+ app.get('/About', function (req, res) {
+  return res.send(About);
+ });
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
