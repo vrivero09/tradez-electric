@@ -10,9 +10,21 @@ app.set('port',port);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/home', function (req, res) {
+app.get('/Home', function (req, res) {
  return res.send("I am home");
 });
+
+app.get('/Services', function (req, res) {
+  return res.send("I am in services");
+ });
+
+ app.get('/Contact', function (req, res) {
+  return res.send("I am in Contact");
+ });
+
+ app.get('/About', function (req, res) {
+  return res.send("I am in about");
+ });
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets

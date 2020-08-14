@@ -12,7 +12,16 @@ class App extends Component {
           <NavbarBrand href="/Home" className="mr-auto">Tradez Electric</NavbarBrand>
             <Nav className="navbar-toggle collapsed" navbar>
               <NavItem>
-                <NavLink href="/Home">Casa</NavLink>
+                <NavLink href="/Home">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/Services">Services</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/Contact">Contact</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/About">About</NavLink>
               </NavItem>
             </Nav>
         </Navbar>
