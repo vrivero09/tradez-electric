@@ -18,9 +18,9 @@ app.get('/Home', function (req, res) {
  return res.send(Home);
 });
 
-app.get('/Services', function (req, res) {
-  return res.send(Services);
- });
+// app.get('/Services', function (req, res) {
+//   return res.send(Services);
+//  });
 
  app.get('/Contact', function (req, res) {
   return res.send(Contact);

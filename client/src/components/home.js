@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import Navigation from './Nav';
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink, Jumbotron, Container  } from 'reactstrap';
+import { Jumbotron, Container  } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
 class Home extends Component {
