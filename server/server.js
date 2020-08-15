@@ -1,13 +1,6 @@
-let express = require('express');
+const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const favicon = require('express-favicon');
-import Home from '../client/src/components/home';
-import Services from '../client/src/components/services';
-import Contact from '../client/src/components/contact';
-import About from '../client/src/components/about';
-
-
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -15,22 +8,6 @@ app.set('port',port);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-app.get('/Home', function (req, res) {
- return res.send(Home);
-});
-
-app.get('/Services', function (req, res) {
-  return res.send(Services);
- });
-
- app.get('/Contact', function (req, res) {
-  return res.send(Contact);
- });
-
- app.get('/About', function (req, res) {
-  return res.send(About);
- });
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
@@ -78,4 +55,21 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 //     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 //   });
 // }
+
+
+// app.get('/Home', function (req, res) {
+//  return res.send(Home);
+// });
+
+// app.get('/Services', function (req, res) {
+//   return res.send(Services);
+//  });
+
+//  app.get('/Contact', function (req, res) {
+//   return res.send(Contact);
+//  });
+
+//  app.get('/About', function (req, res) {
+//   return res.send(About);
+//  });
 
