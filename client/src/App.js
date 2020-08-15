@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import './components/Nav';
 // import Navigation from './components/Nav';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, IndexRoute} from 'react-router-dom';
 import Home from './components/home';
 import About from './components/about';
 import Services from './components/services';
@@ -15,6 +15,7 @@ class App extends Component{
       <BrowserRouter>
         <div className="App">
           <Route exact path='/' component={Home} />
+          {/* <IndexRoute component = {Services}/> */}
           <Route exact path='/Home' component={Home} />
           <Route exact path='/Services' component={Services} />
           <Route exact path='/About' component={About} />
