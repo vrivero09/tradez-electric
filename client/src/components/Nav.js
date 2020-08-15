@@ -15,16 +15,16 @@ import {
             <NavbarBrand href="/Home" className="mr-auto">Tradez Electric</NavbarBrand>
                 <Nav className="navbar-toggle collapsed" navbar>
                 <NavItem>
-                    <NavLink href="./Home">Home</NavLink>
+                    <NavLink to={'./Home'}>Home</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="./Services">Services</NavLink>
+                    <NavLink to={'./Services'}>Services</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="./Contact">Contact</NavLink>
+                    <NavLink to={'./Contact'}>Contact</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="./About">About</NavLink>
+                    <NavLink to={'./About'}>About</NavLink>
                 </NavItem>
                 </Nav>
             </Navbar>
