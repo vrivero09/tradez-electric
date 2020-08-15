@@ -4,7 +4,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink
+    Link
   } from 'reactstrap';
 
   class Navigation extends Component {
@@ -15,16 +15,16 @@ import {
             <NavbarBrand href="/Home" className="mr-auto">Tradez Electric</NavbarBrand>
                 <Nav className="navbar-toggle collapsed" navbar>
                 <NavItem>
-                    <NavLink to={'./Home'}>Home</NavLink>
+                    <Link to={'./Home'}>Home</Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink to={'./Services'}>Services</NavLink>
+                    <Link to={'./Services'}>Services</Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink to={'./Contact'}>Contact</NavLink>
+                    <Link to={'./Contact'}>Contact</Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink to={'./About'}>About</NavLink>
+                    <Link to={'./About'}>About</Link>
                 </NavItem>
                 </Nav>
             </Navbar>
