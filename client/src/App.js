@@ -20,7 +20,6 @@ class App extends Component{
           <Route path='/Contact' component={Contact} />
         </Switch>
       </div>
-
     )
     return(
       <Switch>
