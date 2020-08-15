@@ -20,6 +20,7 @@
     "url": "https://github.com/vrivero09/tradez-electric/issues"
   },
   "homepage": "https://github.com/vrivero09/tradez-electric#readme",
+  "type": "module",
   "dependencies": {
     "concurrently": "^5.2.0",
     "ejs": "^3.1.3",

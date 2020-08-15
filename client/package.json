@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "ejs": "^3.1.3",
