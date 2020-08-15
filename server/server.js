@@ -2,10 +2,12 @@ let express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const favicon = require('express-favicon');
-const { default: Contact } = require('../client/src/components/contact');
-const { default: Services } = require('../client/src/components/services');
-const { default: Home } = require('../client/src/components/home');
-const { default: About } = require('../client/src/components/about');
+import Home from '../client/src/components/home';
+import Services from '../client/src/components/services';
+import Contact from '../client/src/components/contact';
+import About from '../client/src/components/about';
+
+
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -18,9 +20,9 @@ app.get('/Home', function (req, res) {
  return res.send(Home);
 });
 
-// app.get('/Services', function (req, res) {
-//   return res.send(Services);
-//  });
+app.get('/Services', function (req, res) {
+  return res.send(Services);
+ });
 
  app.get('/Contact', function (req, res) {
   return res.send(Contact);
