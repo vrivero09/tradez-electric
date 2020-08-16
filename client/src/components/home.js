@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 class Home extends Component {
   render(){
     return (
-      <div>
+      <div className="App">
           <Navigation/>
           <Jumbotron fluid>
           <Container fluid>
