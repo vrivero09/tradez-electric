@@ -3,9 +3,9 @@ import {
     Navbar,
     NavbarBrand,
     Nav,
-    NavItem,
-    Link
+    NavItem
   } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
   class Navigation extends Component {
       render(){
