@@ -15,13 +15,13 @@ import { Link } from 'react-router-dom';
             <NavbarBrand href="/Home" className="mr-auto">Tradez Electric</NavbarBrand>
                 <Nav className="navbar-toggle collapsed" navbar>
                 <NavItem>
-                    <Link to={'./Home'}>Home</Link>
+                    <Link to={'./Home'}> Home </Link>
                 </NavItem>
                 <NavItem>
-                    <Link to={'./Services'}>Services</Link>
+                    <Link to={'./Services'}> Services </Link>
                 </NavItem>
                 <NavItem>
-                    <Link to={'./Contact'}>Contact</Link>
+                    <Link to={'./Contact'}> Contact </Link>
                 </NavItem>
                 <NavItem>
                     <Link to={'./About'}>About</Link>
