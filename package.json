@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "test",
   "main": "client/app.js",
-  "engine":{
-    "node": "14.8.0"
+  "engines":{
+    "node": "14.x"
   },
   "scripts": {
     "start": "node server/server.js",
