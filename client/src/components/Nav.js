@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
           return(
             <div>
             <Navbar className = "navbar navbar-dark bg-dark"color="dark" light expand="md">
-            <NavbarBrand href="/Home" className="mr-auto">Tradez Electric</NavbarBrand>
+            <NavbarBrand href="./Home" className="mr-auto">Tradez Electric</NavbarBrand>
                 <Nav className="navbar-toggle collapsed" navbar>
                 <NavItem>
                     <Link to={'./Home'}> Home </Link>
