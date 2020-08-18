@@ -16,7 +16,10 @@
     "reactstrap": "^8.5.1",
     "webpack": "^4.42.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

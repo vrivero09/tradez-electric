@@ -2,31 +2,53 @@ import React, {Component} from 'react';
 import {
     Navbar,
     NavbarBrand,
+    NavbarToggler,
+    Collapse,
     Nav,
     NavItem
   } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
   class Navigation extends Component {
-      render(){
+      constructor(props) {
+            super(props);
+
+            this.state = {
+                isOpen: false,
+                };
+
+            this.toggle = this.toggle.bind(this);
+        }
+
+        toggle() {
+            this.setState({
+                isOpen: !this.state.isOpen
+            });
+        }
+
+        render(){
           return(
+             
             <div>
             <Navbar className = "navbar navbar-dark bg-dark"color="dark" light expand="md">
-            <NavbarBrand to={'./Home'} className="mr-auto">Tradez Electric</NavbarBrand>
-                <Nav className="navbar-toggle collapsed" navbar>
+            <NavbarBrand href={'./Home'} className="mr-auto">Tradez Electric</NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse className="navbar right" isOpen={this.state.isOpen} navbar>
+                <Nav className="ml-auto" navbar>
                 <NavItem>
-                    <Link to={'./Home'}> Home </Link>
+                    <NavLink to={'./Home'}> Home </NavLink>
                 </NavItem>
                 <NavItem>
-                    <Link to={'./Services'}> Services </Link>
+                    <NavLink to={'./Services'}> Services </NavLink>
                 </NavItem>
                 <NavItem>
-                    <Link to={'./Contact'}> Contact </Link>
+                    <NavLink to={'./Contact'}> Contact </NavLink>
                 </NavItem>
                 <NavItem>
-                    <Link to={'./About'}>About</Link>
+                    <NavLink to={'./About'}>About</NavLink>
                 </NavItem>
                 </Nav>
+                </Collapse>
             </Navbar>
             </div>
           )
