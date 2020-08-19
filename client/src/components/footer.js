@@ -1,13 +1,14 @@
 import React from 'react';
+import "./footer.css";
 
 function footer(){
     return(
         <div className="main-footer">
-            <div className="container">
+            <div className="container" >
                 <div className="row">
                     {/* Column 1 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4>Hello</h4>
+                        <h4 style={{ color: 'white' }}>Info</h4>
                         <ul className="list-unstyled">
                             <li>Hola</li>
                             <li>hola</li>
@@ -16,7 +17,7 @@ function footer(){
                     </div>
                     {/* Column 2 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4>Hello</h4>
+                        <h4>What's New</h4>
                         <ul className="list-unstyled">
                             <li>Hola</li>
                             <li>hola</li>
@@ -25,7 +26,7 @@ function footer(){
                     </div>
                     {/* Column 3 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4>Hello</h4>
+                        <h4>Price</h4>
                         <ul className="list-unstyled">
                             <li>Hola</li>
                             <li>hola</li>
@@ -34,7 +35,7 @@ function footer(){
                     </div>
                     {/* Column 4 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4>Hello</h4>
+                        <h4>Contact</h4>
                         <ul className="list-unstyled">
                             <li>Hola</li>
                             <li>hola</li>
@@ -42,10 +43,12 @@ function footer(){
                         </ul>
                     </div>
                 </div>
+               
                 {/* Footer Bottom */}
-                <div className="footer-bottom">
-                    <p className="text-xs-center">
-                        &copy;{new Date().getFullYear()} Tradez Electric LLC App - All Rights Reserved
+                <div className="row">
+                    <p className="col-sm"> 
+                    
+                        &copy;{new Date().getFullYear()} Tradez Electric LLC INC | All Rights Reserved | Terms of  Services | Privacy 
                     </p>
                 </div>  
             </div>
