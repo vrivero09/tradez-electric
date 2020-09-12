@@ -7,7 +7,7 @@ import {
     Nav,
     NavItem
   } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
   class Navigation extends Component {
       constructor(props) {
@@ -31,7 +31,7 @@ import { NavLink } from 'react-router-dom';
              
             <div>
             <Navbar className = "navbar navbar-dark bg-dark"color="dark" light expand="md">
-            <NavbarBrand href={'./Home'} className="mr-auto">Tradez Electric</NavbarBrand>
+            <NavbarBrand className="mr-auto"><Link to={'./Home'}>Tradez Electric</Link></NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse className="navbar right" isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
