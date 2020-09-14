@@ -7,36 +7,20 @@ function footer(){
             <div className="container" >
                 <div className="row">
                     {/* Column 1 */}
-                    <div className="col-md-3 col-sm-6">
-                        <h4 style={{ color: 'white' }}>Contact</h4>
                         <ul className="list-unstyled">
-                            <li>Test</li>  
+                            <li>Home | Contact | Services | About</li>  
                         </ul>
-                    </div>
-
-                    {/* Column 2 */}
-                    <div className="col-md-3 col-sm-6">
-                        <h4>Services</h4>
-                        <ul className="list-unstyled">
-                            <li>Test</li>
+                        <ul>
+                            <p className="col-sm"> 
+                                &copy;{new Date().getFullYear()} Tradez Electric LLC INC | All Rights Reserved | Terms of  Services | Privacy 
+                            </p>
                         </ul>
-                    </div>
-
-                    {/* Column 3 */}
-                    <div className="col-md-3 col-sm-6">
-                        <h4>Contact</h4>
-                        <ul className="list-unstyled">
-                            <li>Test</li>
+                        <ul>
+                            
                         </ul>
-                    </div>
                 </div>
                
                 {/* Footer Bottom */}
-                <div className="row">
-                    <p className="col-sm"> 
-                        &copy;{new Date().getFullYear()} Tradez Electric LLC INC | All Rights Reserved | Terms of  Services | Privacy 
-                    </p>
-                </div>  
             </div>
         </div>
     )
