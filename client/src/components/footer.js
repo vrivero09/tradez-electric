@@ -8,38 +8,25 @@ function footer(){
                 <div className="row">
                     {/* Column 1 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4 style={{ color: 'white' }}>Info</h4>
+                        <h4 style={{ color: 'white' }}>Contact</h4>
                         <ul className="list-unstyled">
-                            <li>Hola</li>
-                            <li>hola</li>
-                            <li>HOLA</li>
+                            <li>Test</li>  
                         </ul>
                     </div>
+
                     {/* Column 2 */}
                     <div className="col-md-3 col-sm-6">
-                        <h4>What's New</h4>
+                        <h4>Services</h4>
                         <ul className="list-unstyled">
-                            <li>Hola</li>
-                            <li>hola</li>
-                            <li>HOLA</li>
+                            <li>Test</li>
                         </ul>
                     </div>
+
                     {/* Column 3 */}
-                    <div className="col-md-3 col-sm-6">
-                        <h4>Price</h4>
-                        <ul className="list-unstyled">
-                            <li>Hola</li>
-                            <li>hola</li>
-                            <li>HOLA</li>
-                        </ul>
-                    </div>
-                    {/* Column 4 */}
                     <div className="col-md-3 col-sm-6">
                         <h4>Contact</h4>
                         <ul className="list-unstyled">
-                            <li>Hola</li>
-                            <li>hola</li>
-                            <li>HOLA</li>
+                            <li>Test</li>
                         </ul>
                     </div>
                 </div>
@@ -47,7 +34,6 @@ function footer(){
                 {/* Footer Bottom */}
                 <div className="row">
                     <p className="col-sm"> 
-                    
                         &copy;{new Date().getFullYear()} Tradez Electric LLC INC | All Rights Reserved | Terms of  Services | Privacy 
                     </p>
                 </div>  
