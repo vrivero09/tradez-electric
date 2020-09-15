@@ -9,7 +9,7 @@ class Contact extends Component {
             <Jumbotron fluid>
                 <Container fluid>
                     <h1 className="display-3">Contact info</h1>
-                    <p className="lead">"COMING SOON!"</p>
+                    <p className="lead">"INFO COMING SOON!"</p>
                 </Container>
             </Jumbotron>
         </div>
