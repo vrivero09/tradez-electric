@@ -5,11 +5,12 @@
     position: relative;
     bottom: 0;
     width: 100%;
-    
+
 }
 /* .content-wrap {
 } */
 
 h4 {
     text-decoration-color: white;
+    overflow-y: auto;
 }

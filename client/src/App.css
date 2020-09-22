@@ -35,6 +35,14 @@
   color: white;
 }
 
+.App {
+  background-image: url("https://images.unsplash.com/photo-1491316713428-0cbd516756a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60");
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  background-size: cover;
+}
+
 .App-link {
   color: #61dafb;
 }
