@@ -4,7 +4,7 @@ import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import Form from './Form'
 
 
-class Contact extends React.Component {
+class Contact extends Component {
 
     handleOnClick = () => {
         this.props.history.push("/About");

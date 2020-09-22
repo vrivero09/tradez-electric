@@ -2,6 +2,7 @@ import React from 'react';
 import "./footer.css";
 import {ImFacebook2} from "react-icons/im"
 import {SiInstagram} from "react-icons/si"
+import { Link } from 'react-router-dom';
 
 function footer(){
     return(
@@ -10,7 +11,7 @@ function footer(){
                 <div className="row">
                     {/* Column 1 */}
                         <ul className="list-unstyled">
-                            <li>Home | Contact | Services | About</li>  
+                            <li><Link to="/Home">Home</Link> | <Link to="/Contact">Contact</Link> | <Link to="/Services">Services</Link> | <Link to="/About">About</Link></li>  
                         </ul>
                         
                         <ul>
@@ -25,7 +26,7 @@ function footer(){
                         </ul>
 
                         <ul>
-                            <p className="col-sm" > 
+                            <p className="col col-1-3" > 
                                     &copy;{new Date().getFullYear()} Tradez Electric LLC INC | All Rights Reserved | Terms of  Services | Privacy 
                             </p>
 
