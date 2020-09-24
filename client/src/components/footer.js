@@ -31,7 +31,7 @@ function footer(){
 
                         <ul>
                             <p className="col col-1-3" > 
-                                    &copy;{new Date().getFullYear()} Tradez Electric LLC INC | All Rights Reserved | Terms of  Services | Privacy 
+                                    &copy;{new Date().getFullYear()} Tradez Electric LLC | All Rights Reserved | Terms of  Services | Privacy 
                             </p>
 
                         </ul>

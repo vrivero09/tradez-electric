@@ -6,12 +6,10 @@ class About extends Component {
     render(){
         return(
             <div className="App">
-            <Jumbotron fluid>
                 <Container fluid>
-                    <h1 className="display-3">About info</h1>
-                    <p className="lead">"INFO COMING SOON!"</p>
+                <h1 className="display-3" style={{marginTop: "100px"}}>About Info</h1>
+                    <p className="lead">"COMING SOON!"</p>
                 </Container>
-            </Jumbotron>
         </div>
 
         );
