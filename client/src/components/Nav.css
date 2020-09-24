@@ -1,4 +1,15 @@
 #navbar {
     font-weight: 100;
     font-size: 3rem;
+    border-bottom: 0;
+    color: aquamarine;
+
+}
+a:hover {
+    color: rgb(24, 28, 214);
+
+}
+
+.nav-item {
+    margin-right: 10;
 }

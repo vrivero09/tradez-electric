@@ -10,8 +10,12 @@ function footer(){
             <div className="container" >
                 <div className="row">
                     {/* Column 1 */}
-                        <ul className="list-unstyled">
-                            <li><Link to="/Home">Home</Link> | <Link to="/Contact">Contact</Link> | <Link to="/Services">Services</Link> | <Link to="/About">About</Link></li>  
+                        <ul className="list-unstyled" >
+                            <li style={{color: 'white'}}><Link to="/Home" style={{color: 'white', textDecoration: 'none'}} activeStyle={{color: 'white', textDecoration: 'none'}}>
+                                Home</Link> | <Link to="/Contact" style={{color: 'white', textDecoration: 'none'}} activeStyle={{color: 'white', textDecoration: 'none'}}>
+                                    Contact</Link> | <Link to="/Services" style={{color: 'white', textDecoration: 'none'}} activeStyle={{color: 'white', textDecoration: 'none'}}>
+                                        Services</Link> | <Link to="/About" style={{color: 'white', textDecoration: 'none'}} activeStyle={{color: 'white', textDecoration: 'none'}}>
+                                            About</Link></li>  
                         </ul>
                         
                         <ul>
