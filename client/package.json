@@ -8,18 +8,22 @@
     "ejs": "^3.1.3",
     "express": "^4.17.1",
     "gh-pages": "^3.1.0",
-    "mdbreact": "^4.27.0",
-    "npm": "^6.14.6",
+    "mdbreact": "^5.2.0",
+    "npm": "^8.18.0",
     "package-lock.json": "^1.0.0",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^7.8.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^4.4.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^5.0.1",
     "reactstrap": "^8.5.1",
-    "webpack": "^4.44.1"
+    "webpack": "^5.74.0"
   },
   "devDependencies": {
     "css-loader": "^4.2.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
     "style-loader": "^1.2.1"
   },
   "scripts": {
