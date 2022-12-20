@@ -1,0 +1,19 @@
+{
+  "name": "tradez-electric",
+  "version": "1.0.0",
+  "description": "This application is create for a marine electric company. The owner of the company requested to make a simple app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrivero09/tradez-electric.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vrivero09/tradez-electric/issues"
+  },
+  "homepage": "https://github.com/vrivero09/tradez-electric#readme"
+}
