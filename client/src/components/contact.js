@@ -1,6 +1,5 @@
 import React, { Component} from 'react';
-import {  Container } from 'reactstrap';
-import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { Container, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import Form from './Form'
 
 
@@ -15,8 +14,6 @@ class Contact extends Component {
         return(
             <div className="App">
                 <Container>
-                <Row style={{paddingTop: "100px"}}>
-                    <Col sm="6">
                         <Card style={{ backgroundColor: "transparent" }} body >
                         <CardTitle><h1>Contact Information</h1></CardTitle>
                         <hr />
@@ -25,19 +22,15 @@ class Contact extends Component {
                                 Phone number: 305-467-2859
                             </ul>
                             <ul>
-                                Location: Miami Gardens, FL
+                                Location: Orlando, FL
                             </ul>
                         </CardText>
                         <Button color="info" onClick={this.handleOnClick}>Learn more</Button>
                         </Card>
-                    </Col>
 
-                    <Col sm="6">
-                        <Card  style={{ backgroundColor: "transparent" }} body>
+                        {/* <Card  style={{ backgroundColor: "transparent" }} body>
                             <Form />
-                        </Card>
-                    </Col>
-    </Row>
+                        </Card> */}
                 </Container>
                     
                 
