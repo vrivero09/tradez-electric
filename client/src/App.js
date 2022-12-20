@@ -10,8 +10,8 @@ import Nav from './components/Nav'
 import Footer from './components/footer'
 
 class App extends Component{
-  render(){
-    const App = () =>(
+  render() {
+    return(
       <div className="page-container">
          <Nav />
         <div className="content-wrap">
@@ -28,12 +28,13 @@ class App extends Component{
     </div>
     </div>
 
+
     )
-    return(
-      <Switch>
-        <App />
-      </Switch>
-    );
+    // return(
+    //   <Switch>
+    //     <App />
+    //   </Switch>
+    // );
   }
 }
 
