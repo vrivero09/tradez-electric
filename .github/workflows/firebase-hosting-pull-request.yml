@@ -11,7 +11,9 @@ jobs:
       - uses: actions/checkout@v2
       - runs:
         using: 'node16'
+        pre: 'setup.js'
         main: 'index.js'
+        post: 'cleanup.js'
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
