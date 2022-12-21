@@ -8,12 +8,12 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - run:
         uses: 'node16'
         pre: 'setup.js'
         main: 'index.js'
         post: 'cleanup.js'
+      - uses: actions/checkout@v2
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
