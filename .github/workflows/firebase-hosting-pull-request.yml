@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - runs:
-        using: 'node16'
+      - run:
+        uses: 'node16'
         pre: 'setup.js'
         main: 'index.js'
         post: 'cleanup.js'
