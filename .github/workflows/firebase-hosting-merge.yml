@@ -20,8 +20,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - uses: node_modules
-      name: node_modules
+    - name: node_modules
+      uses: node_modules
     - run: npm ci && npm run build
     - uses: FirebaseExtended/action-hosting-deploy@v0
       with:
