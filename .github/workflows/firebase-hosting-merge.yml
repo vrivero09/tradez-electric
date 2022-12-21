@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      runs:
+      - runs:
         using: 'node16'
         main: 'index.js'
       - run: npm ci && npm run build
