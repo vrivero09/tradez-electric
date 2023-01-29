@@ -69,12 +69,12 @@ class Contact extends Component {
                     onChange={(e) => this.setState({message: e.target.value})}
                 ></textarea>
 
-                {/* <button
+                <button
                     type="submit"
                     style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}
                 >
                     Submit
-                </button> */}
+                </button>
             </form>
 
         );
