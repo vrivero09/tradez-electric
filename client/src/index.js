@@ -10,9 +10,8 @@ import App from './App';
 // ), document.getElementById('root'));
 
 ReactDOM.render(
-    <h1>hello</h1>
-    // <BrowserRouter>
-    //     <App />
-    // </BrowserRouter>
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
     , document.getElementById('root'));
 
