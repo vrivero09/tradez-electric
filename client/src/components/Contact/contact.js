@@ -38,10 +38,11 @@ class Contact extends Component {
             });
 
         // Reset input
-        this.setState({})
+        this.setState({name: ''})
+        this.setState({email: ''})
+        this.setState({message: ''})
+
     }
-
-
 
     render() {
 
