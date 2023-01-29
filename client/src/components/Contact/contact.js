@@ -38,9 +38,9 @@ class Contact extends Component {
             });
 
         // Reset input
-        this.setState({name: ''})
-        this.setState({email: ''})
-        this.setState({message: ''})
+        // this.setState({name: ''})
+        // this.setState({email: ''})
+        // this.setState({message: ''})
 
     }
 
