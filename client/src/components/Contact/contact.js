@@ -11,7 +11,7 @@ class Contact extends Component {
     // const [message, setMessage] = useState('');
 
     handleSubmitMessage () {
-        alert('Oops! This page is still under construction. :)')
+        alert('Oops! This page is still under construction. Come back another time! 😊')
       }
 
     constructor(props) {
@@ -158,21 +158,21 @@ class Contact extends Component {
 
 
         <label>
-          Name:
+          <h6>Name:</h6>
           {/* <input type="text" value={name} onChange={this.handleNameChange} /> */}
           <input type="text"/>
 
         </label>
         <label>
-          Email:
+          <h6>Email:</h6>
           {/* <input type="email" value={email} onChange={this.handleEmailChange} /> */}
           <input type="email"/>
 
         </label>
         <label>
-          Message:
+          <h6>Message:</h6>
           {/* <textarea value={message} onChange={this.handleMessageChange} /> */}
-          <textarea />
+          <textarea type="message" />
 
         </label>
         <button type="submit" onClick={this.handleSubmitMessage}>Submit</button>

@@ -8,6 +8,7 @@
 
 body {
   background-color: rgb(248, 246, 253);
+  padding: 20px;
 }
 
 body,
@@ -77,6 +78,7 @@ textarea:focus {
   cursor: pointer;
   transition: 0.2s ease-in-out;
   margin-top: 10px;
+  width: 10rem;
 }
 
 .form > button:hover {
